@@ -37,9 +37,4 @@ This project uses Laravel Sail with Docker to set up a Laravel development envir
    ```sh
    ./vendor/bin/sail artisan migrate
 
-7. **Adjust File Permissions:**
-   ```sh
-   ./vendor/bin/sail shell
-   chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
-   chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 

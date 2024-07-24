@@ -13,6 +13,10 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ=UTC
 ENV SUPERVISOR_PHP_USER="sail"
 
+# Fix permissions for Laravel directories
+RUN chown -R www-data:www-data /storage /bootstrap/cache \
+    && chmod -R 775 /storage /bootstrap/cache
+
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Use the PHP 8.2.1 FPM image as a base
