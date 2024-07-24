@@ -1,4 +1,4 @@
-docker/volume/
+/docker/volume/
 /.phpunit.cache
 /node_modules
 /public/build
