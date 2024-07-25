@@ -1,0 +1,11 @@
+{
+    "name": "Examples",
+    "alias": "examples",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Examples\\Providers\\ExamplesServiceProvider"
+    ],
+    "files": []
+}
